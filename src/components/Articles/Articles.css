@@ -1,0 +1,110 @@
+.articles {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 7% 0 5% 0;
+    justify-content: center;
+    font-family: "Poppins", serif;
+}
+
+.content-article {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid;
+}
+
+.content-article-header {
+    display: flex;
+    justify-content: center;
+}
+
+.content-article-header>img {
+    width: 80vw;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.content-article-info {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.content-article-info>.time>p:nth-last-child(1) {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.content-article-info>.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-article-info>.share>.icons-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-article-info>.share>.icons-share>img {
+    width: 20px;
+    object-fit: contain;
+}
+
+.content-article-paragraph>h1 {
+    text-transform: uppercase;
+}
+
+.content-article-paragraph {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.content-article-paragraph>p {
+    margin: 10px 0 10px 0;
+}
+
+@media (max-width: 768px) {
+    .articles {
+        padding: 20% 0 5% 0;
+    }
+    .content-article-header>img {
+        width: 80vw;
+        height: auto;
+        object-fit: contain;
+    }
+    .content-article-info {
+        width: 90%;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+    .content-article-info>.time>p:nth-last-child(1){
+        font-size: 0.6rem;
+    }
+    .content-article-info>.share {
+        flex-direction: column;
+        gap: 5px;
+        align-items: start;
+    }
+    .content-article-paragraph {
+        width: 90%;
+        font-size: 0.6rem;
+        padding: 20px 0 0 0;
+    }
+}

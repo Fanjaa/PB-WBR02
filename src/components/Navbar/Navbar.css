@@ -1,10 +1,11 @@
 .header {
-    position: fixed;
+    position: absolute;
     display: flex;
     width: 100%;
     justify-content: center;
     z-index: 999;
     transition: position 0.3s ease-in-out;
+    scroll-behavior: smooth;
 }
 
 .header.scrolled {
@@ -54,6 +55,7 @@
 
 .navbar-logo>img {
     width: 35px;
+    cursor: pointer;
     /* border-radius: 10px 5px 10px 5px; */
     /* background-color: white; */
 }
@@ -71,6 +73,7 @@
 
 .navbar-list>ul>li {
     list-style: none;
+    cursor: pointer;
 }
 
 .navbar-list>ul>li>a {
@@ -101,6 +104,9 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        position: fixed;
+    }
     .navbar-logo {
         width: auto;
      }

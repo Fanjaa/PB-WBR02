@@ -9,6 +9,7 @@ import arrowOutward from './icons/arrow_outward.svg'
 import instagramIcon from './icons/instagram.svg'
 import tiktokIcons from './icons/tiktok.svg'
 import whatsappIcon from './icons/whatsapp.svg'
+import xIcon from './icons/X_icon.svg'
 import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
 import videoCup1 from './videoCup1.mp4'
@@ -48,6 +49,7 @@ export const assets = {
     instagramIcon,
     tiktokIcons,
     whatsappIcon,
+    xIcon,
     menuIcon,
     closeIcon,
     videoCup1,

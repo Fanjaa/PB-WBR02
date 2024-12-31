@@ -1,10 +1,13 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useEffect, useState } from 'react'
-import './Navbar.css'
+import '../Navbar/Navbar'
 import { assets } from '../../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 
-const Navbar = () => {
+const NavbarArticles = () => {
+
+  const navigate = useNavigate();
   
   useEffect(() => {
     // Handle Responsive Navbar Scroll 
@@ -31,7 +34,7 @@ const Navbar = () => {
   const handleMenu = () => {
     setIsMenuActive(prevState => !prevState);
   };
-  
+
   // Handle Scroll to Section
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -48,12 +51,8 @@ const Navbar = () => {
         </div>
         <div className={`navbar-list ${isMenuActive ? 'active' : ''}`}>
           <ul>
-            <li><a onClick={() => scrollToSection('hero')}>Home</a></li>
-            <li><a onClick={() => scrollToSection('main')}>Panitia</a></li>
-            <li><a onClick={() => scrollToSection('intro')}>Intro</a></li>
-            <li><a onClick={() => scrollToSection('tournament')}>Tournament</a></li>
-            <li><a onClick={() => scrollToSection('teams')}>Teams</a></li>
-            <li><a onClick={() => scrollToSection('stories')}>Stories</a></li>
+            <li><a onClick={() => navigate('../')}>Home</a></li>
+            <li><a onClick={() => scrollToSection('articles')}>Article</a></li>
             <li><a onClick={() => scrollToSection('footer')}>Footer</a></li>
           </ul>
         </div>
@@ -68,4 +67,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default NavbarArticles

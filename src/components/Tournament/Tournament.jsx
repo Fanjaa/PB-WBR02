@@ -2,8 +2,12 @@
 import React from 'react'
 import './Tournament.css'
 import { assets } from '../../assets/assets'
+import { useNavigate } from 'react-router-dom'
 
 const Tournament = () => {
+  
+  const navigate = useNavigate();
+
   return (
     <div className='tournament' id='tournament'>
       <div className="tournament-header">
@@ -97,14 +101,14 @@ const Tournament = () => {
           </div>
         </div>
         <div className="tournament-grid-item">
-          <img src={assets.backgroundTournament} alt="" loading="lazy" />
+          <img onClick={() => navigate('./article')} src={assets.backgroundTournament} alt="" loading="lazy" />
           <div className="title-image">
             <div className="title-image-paragraph">
               <p>Momen Sportivitas</p>
               <p>Momen sikap sportif, mendukung dan saling menghormati.</p>
             </div>
             <div className="title-image-button">
-              <button><img src={assets.arrowOutward} alt="" /></button>
+              <button onClick={() => navigate('./article')}><img src={assets.arrowOutward} alt="" /></button>
             </div>
           </div>
         </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import { assets } from '../../assets/assets'
 import './Hero.css'
 
+
 const Hero = () => {
   return (
     <div className="hero" id='hero'>
