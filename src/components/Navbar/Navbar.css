@@ -137,7 +137,8 @@
         width: 95%;   
     }
     .menu-navbar {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
 }
 
