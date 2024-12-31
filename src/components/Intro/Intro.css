@@ -50,7 +50,7 @@
     color: var(--white-color);
 }
 
-.content-paragraph-intro>button {
+/* .content-paragraph-intro>button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,7 +70,7 @@
 
 .content-paragraph-intro>button:hover {
     background-color: #EEF6FF;
-}
+} */
 
 .intro-videos {
     display: flex;

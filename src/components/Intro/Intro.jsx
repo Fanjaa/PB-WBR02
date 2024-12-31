@@ -13,7 +13,7 @@ const Intro = () => {
           </div>
           <div className="content-paragraph-intro">
             <p>Saksikan kembali momen-momen seru dan penuh semangat dari turnamen kami melalui video dokumentasi ini. Nikmati aksi terbaik para pemain dan atmosfer kompetisi yang luar biasa.</p>
-            <button>Learn More <img src={assets.arrowOutward} alt="" /></button>
+            {/* <button>Learn More <img src={assets.arrowOutward} alt="" /></button> */}
           </div>
         </div>      
         <div className="intro-videos">
