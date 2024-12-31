@@ -1,0 +1,145 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    z-index: 999;
+    transition: position 0.3s ease-in-out;
+}
+
+.header.scrolled {
+    position: fixed;
+    display: flex;
+    margin: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-bottom: 1px solid  #5C5D6B;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-height: 50px;
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 50px;
+    border: 1px solid white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    transition: position 0.3s ease-in-out;
+    /* color: var(--primary-text-color); */
+}
+
+.navbar.scrolled {
+    margin: 0;
+    backdrop-filter: none;
+    background: transparent;
+    border: none;
+    /* width: 100%;
+    border-radius: 0;
+    padding: 20px 80px;
+    border: none;
+    border-bottom: 1px solid ; */
+}
+
+.navbar-logo {
+    display: flex;
+    width: 120px;
+}
+
+.navbar-logo>img {
+    width: 35px;
+    /* border-radius: 10px 5px 10px 5px; */
+    /* background-color: white; */
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.navbar-list>ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-list>ul>li {
+    list-style: none;
+}
+
+.navbar-list>ul>li>a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    /* color: var(--primary-text-color); */
+}
+
+.navbar-list>ul>li>a, .booking>p {
+    font-family: "Poppins", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    border: 1px solid white;
+    padding: 0 10px;
+    border-radius: 50px;
+}
+
+.menu-navbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-logo {
+        width: auto;
+     }
+    .navbar-list {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 40%;
+        bottom: 10%;
+        border: none;
+        height: 100vh;
+    }
+    .navbar-list.active {
+        display: block;
+    }
+    .navbar-list>ul {
+        display: inline-block;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5); 
+        top: 10%;
+        border-radius: 10px;
+    }
+    .navbar-list>ul>li {
+        padding: 10px 40px;
+        border-bottom: 1px solid;
+    }
+    .navbar-list>ul>li:nth-last-child(1) {
+        border-bottom: none;
+    }
+    .header {
+        top: -10px;
+    }
+    .navbar {
+        width: 95%;   
+    }
+    .menu-navbar {
+        display: block;
+    }
+}
+
+
+

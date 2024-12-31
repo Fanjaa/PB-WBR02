@@ -1,0 +1,117 @@
+.intro {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #68A7F4;
+    padding: 60px 0 60px 0;
+}
+
+.intro-container {
+    display: flex;
+    width: 90%;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.content-title-intro {
+    display: flex;
+    width: 100%;
+}
+
+.content-title-intro>h1 {
+    font-family: "Bebas Neue", serif;
+    color: var(--white-color);
+    font-size: 5rem;
+}
+
+.content-title-intro>h1>span {
+    display: block;
+}
+
+.content-paragraph-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content-paragraph-intro>p {
+    font-family: "Poppins", serif;
+    color: var(--white-color);
+}
+
+.content-paragraph-intro>button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 60%;
+    height: 40px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: var(--white-color);
+    color: black;
+    cursor: pointer;
+}
+
+.content-paragraph-intro>button>img {
+    filter: invert(75%);
+}
+
+.content-paragraph-intro>button:hover {
+    background-color: #EEF6FF;
+}
+
+.intro-videos {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.intro-videos>video {
+    width: auto;
+    max-height: 400px;
+    /* object-fit: cover; */
+    border-radius: 15px;
+    border: 5px solid #EEF6FF;
+    /* transform: rotate(270deg); */
+}
+
+@media (max-width:768px) {
+    .intro-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .intro-content {
+        width: 100%;
+    }
+    .content-title-intro {
+        width: 100%;
+    }
+    .content-title-intro>h1 {
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .content-paragraph-intro  {
+        justify-content: center;
+        align-items: center;
+    }
+    .content-paragraph-intro>p {
+        text-align: justify;
+        line-height: 1;
+    }    
+}

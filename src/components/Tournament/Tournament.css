@@ -1,0 +1,128 @@
+.tournament {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 60px 0;
+}
+
+.tournament-header {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Bebas Neue", serif;
+}
+
+.tournament-header>h1 {
+    font-size: 4rem;
+    letter-spacing: 8px;
+}
+
+.tournament-header>p {
+    width: 70%;
+}
+
+.tournament-header>p:nth-last-child(1) {
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.tournament-grid {
+    display: grid;
+    width: 90%;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    gap: 5px;
+}
+
+.tournament-grid::-webkit-scrollbar {
+    display: none;
+}
+
+.tournament-grid-item {
+    position: relative;
+}
+
+.tournament-grid-item>img {
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.title-image {
+    position: absolute;
+    display: flex;
+    bottom: 5%;
+    left: 5%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-family: "Poppins", serif;
+}
+
+.title-image-paragraph {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    /* width: 60%; */
+}
+
+.title-image-paragraph>p:nth-last-child(1) {
+    font-weight: 200;
+    line-height: 1;
+}
+
+.title-image-paragraph>p:nth-last-child(2) {
+    display: inline-block;
+    text-align: center;
+    width: fit-content;
+    min-width: 100px;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-weight: 200;
+    line-height: 1;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 10px;
+}
+
+.title-image-button>button {
+    display: flex;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.title-image-button>button:hover {
+    background-color: aliceblue;
+}
+
+.title-image-button>button>img {
+    filter: brightness(25%);
+}
+
+@media (max-width: 768px) {
+    .tournament-header {
+        width: 90%;
+        gap: 10px;
+    }
+    .tournament-header>h1 {
+        font-size: 2rem;
+    }
+    .tournament-header>p {
+        width: 90%;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,104 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--white-color);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 1.5rem;
+    margin: 100px;
+}
+
+.main-content>h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 4rem;
+    letter-spacing: 8px;
+}
+
+.content-grid {
+    display: grid;
+    grid-auto-flow: column; 
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    overflow-x: scroll;
+    gap: 15px;
+}
+
+.content-grid::-webkit-scrollbar {
+    display: none;
+    /* display: none; */
+}
+
+/* .content-grid::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+} */
+
+.content-grid-item {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #EEF6FF;
+}
+
+.content-grid-item>img {
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content-grid-item-paragraph {
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content-grid-item-paragraph>p {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1;
+    /* white-space: nowrap;
+    overflow: hidden; */
+    font-style: italic;
+}
+
+.content-grid-item-paragraph>p:nth-last-child(2) {
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #68A7F4;
+    border-radius: 15px 5px 15px 5px;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .main-content>h1 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+    .content-grid-item {
+        height: auto;
+    }
+    .content-grid-item>img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .content-grid-item-paragraph {
+    } 
+}
