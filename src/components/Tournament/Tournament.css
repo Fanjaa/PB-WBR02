@@ -24,12 +24,9 @@
 }
 
 .tournament-header>p {
-    width: 70%;
-}
-
-.tournament-header>p:nth-last-child(1) {
-    margin-top: 10px;
-    text-decoration: underline;
+    font-family: "Poppins", serif;
+    font-size: 1rem;
+    width: 80%;
 }
 
 .tournament-grid {

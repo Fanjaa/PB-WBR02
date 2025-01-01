@@ -74,10 +74,10 @@
 
 @media (max-width: 768px) {    
     .hero {
-        height: 80vh;
+        height: 90vh;
     }
     .hero-content {
-        height: 40vh;   
+        height: 50vh;   
         background-position: center;
         background-repeat: no-repeat;
     }
