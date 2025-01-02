@@ -14,7 +14,7 @@ const About = () => {
                 <p>PB WBR mengadakan turnamen tahunan untuk mengembangkan bakat dan semangat olahraga.</p>
                 <div className="input-email">
                     <label htmlFor="email"></label>
-                    <input type="email" name="email" id="email" placeholder='Enter Email' required/>
+                    <input type="email" name="email" id="email" placeholder='Email' required/>
                     <button onClick={() => ComingSoonFeatures()}><img src={assets.arrowOutward}></img></button>
                 </div>
             </div>
@@ -37,9 +37,9 @@ const About = () => {
                 </ul>
                 <ul>
                     <h4>KEBIJAKAN</h4>
-                    <li><a onClick={ComingSoonFeatures}>Kebijakan Privasi</a></li>
-                    <li><a onClick={ComingSoonFeatures}>Syarat & Ketentuan</a></li>
-                    <li><a onClick={ComingSoonFeatures}>Kebijakan Pengembalian</a></li>
+                    <li><a onClick={() => ComingSoonFeatures()}>Kebijakan Privasi</a></li>
+                    <li><a onClick={() => ComingSoonFeatures()}>Syarat & Ketentuan</a></li>
+                    <li><a onClick={() => ComingSoonFeatures()}>Kebijakan Pengembalian</a></li>
                 </ul>
             </div>
         </div>
