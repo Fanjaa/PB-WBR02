@@ -16,8 +16,8 @@ const Teams = () => {
           </div>
         </div>
         <div className="content-paragraph">
-          <h2 data-aos="fade-left" data-aos-duration="1000">Dedikasi untuk Keberlanjutan Turnamen.</h2>
-          <img src={assets.panitia2Image} alt="Teams Image" data-aos="zoom-in-left" data-aos-duration="1000"/>
+          <h2 data-aos="fade-down-right" data-aos-duration="1000">Dedikasi untuk Keberlanjutan Turnamen.</h2>
+          <img src={assets.panitia2Image} alt="Teams Image" data-aos="zoom-in" data-aos-duration="1000"/>
         </div>
       </div>
       

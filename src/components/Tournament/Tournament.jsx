@@ -13,10 +13,10 @@ const Tournament = () => {
   return (
     <div className='tournament' id='tournament'>
       <div className="tournament-header">
-        <h1 data-aos="fade-left" data-aos-duration="1000">JELAJAHI TURNAMEN KAMI</h1>
-        <p data-aos="fade-right" data-aos-duration="1000">&quot;Nikmati pengalaman seru dan kompetitif di Turnamen Badminton kami! Saksikan aksi memukau dari para pemain berbakat, nikmati momen-momen mendebarkan, dan dukung tim favorit Anda di arena. Turnamen ini adalah tempat berkumpulnya semangat olahraga, persahabatan, dan prestasi.&quot;</p>
+        <h1 data-aos="fade-right" data-aos-duration="1000">JELAJAHI TURNAMEN KAMI</h1>
+        <p data-aos="fade-up" data-aos-duration="1000">&quot;Nikmati pengalaman seru dan kompetitif di Turnamen Badminton kami! Saksikan aksi memukau dari para pemain berbakat, nikmati momen-momen mendebarkan, dan dukung tim favorit Anda di arena. Turnamen ini adalah tempat berkumpulnya semangat olahraga, persahabatan, dan prestasi.&quot;</p>
       </div>
-      <div className="tournament-grid" data-aos="fade-left" data-aos-duration="1000">
+      <div className="tournament-grid" data-aos="fade-up" data-aos-duration="1000">
         {data.map((item) => (
           <div className="tournament-grid-item" key={item.id}>
             <img src={assets[item.image]} alt={item.title} loading="lazy" onClick={() => navigate(item.url)} />

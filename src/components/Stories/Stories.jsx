@@ -12,7 +12,7 @@ const Stories = () => {
             <img src={assets.backgroundTournament} alt=""/>
           </div>
           <div className="stories-grid-items" id='paragraphOne' >
-            <div className="stories-paragraph" data-aos="fade-left" data-aos-duration="1000">
+            <div className="stories-paragraph" data-aos="fade-up" data-aos-duration="1000">
               <h1>Membangun Sportivitas yang Tinggi dalam Setiap Kompetisi</h1>
               <p>Sportivitas adalah nilai utama dalam setiap pertandingan, yang mengedepankan sikap saling menghormati antar pemain, wasit, dan penonton. Menghargai aturan permainan dan menjunjung tinggi fair play adalah kunci untuk menciptakan atmosfer kompetisi yang positif dan sehat.</p>
               <p onClick={() => ComingSoonFeatures()}><a>Learn More</a><img src={assets.arrowOutward} alt="" /></p>
