@@ -52,6 +52,7 @@
     font-weight: 1rem;
     justify-content: start;
     gap: 5px;
+    cursor: pointer;
 }
 
 .content-card-paragraph>p>a {

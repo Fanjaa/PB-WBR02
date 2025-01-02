@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "../components/Navbar/Navbar";
 import Main from "../components/Main/Main";
 import Hero from "../components/Hero/Hero";
@@ -9,8 +9,15 @@ import Teams from "../components/Teams/Teams";
 import Stories from "../components/Stories/Stories";
 import About from "../components/About/About";
 import Footer from "../components/Footer/Footer";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  
+  useEffect(() => {
+    Aos.init()
+}, [])
+
   return (
     <>
       <Navbar />

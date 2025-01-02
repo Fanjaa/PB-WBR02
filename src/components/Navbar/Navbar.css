@@ -32,7 +32,6 @@
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5); 
     color: white;
-    transition: position 0.3s ease-in-out;
     /* color: var(--primary-text-color); */
 }
 
@@ -53,7 +52,7 @@
     width: 120px;
 }
 
-.navbar-logo>img {
+.navbar-logo>a>img {
     width: 35px;
     cursor: pointer;
     /* border-radius: 10px 5px 10px 5px; */
@@ -83,7 +82,7 @@
     /* color: var(--primary-text-color); */
 }
 
-.navbar-list>ul>li>a, .booking>p {
+.navbar-list>ul>li>a,  .booking>button{
     font-family: "Poppins", serif;
     font-size: 1.2rem;
     font-weight: 400;
@@ -93,10 +92,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.booking>button {
+    background-color: transparent;
+    color: var(--white-color);
     width: 120px;
     border: 1px solid white;
-    padding: 0 10px;
     border-radius: 50px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.booking>button:hover {
+    background-color: #5C5D6B;
 }
 
 .menu-navbar {
@@ -113,17 +122,18 @@
      }
     .navbar-list {
         position: absolute;
-        display: none;
         top: 100%;
-        left: 30%;
-        right: -70%;
+        right: -100%;
         bottom: 10%;
         border: none;
-        height: 100vh;
+        width: 60vw;
+        height: 150vh;
+        transition: 0.75s ease-out;
+        background-color: black;
     }
     .navbar-list.active {
         display: block;
-
+        right: 0%;
     }
     .navbar-list>ul {
         display: inline-block;
@@ -144,6 +154,8 @@
         width: 100%; 
         border-radius: 0; 
         border: none; 
+        right: 10%;
+        background-color: black;
     }
     .menu-navbar {
         display: flex;

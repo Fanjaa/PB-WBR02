@@ -49,12 +49,12 @@
 .stories-paragraph>p {
     display: flex;
     gap: 5px;
+    cursor: pointer;
 }
 
 .stories-paragraph>p>a {
     text-decoration: none;
     color: var(--white-color);
-    cursor: pointer;
     text-decoration: underline;
     font-size: 1.2rem;
 }

@@ -11,10 +11,10 @@ const Main = () => {
   return (
       <div className="main" id='main'>
         <div className="main-content">
-          <h1>PANITIA PB WBR 02</h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">PANITIA PB WBR 02</h1>
           <div className="content-grid">
             {data.map((item) => (
-              <div className="content-grid-item" key={item.id}>
+              <div className="content-grid-item" key={item.id} data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src={assets[item.image]} alt={item.name} loading="lazy" />
                 <div className="content-grid-item-paragraph">
                   <p>{item.name}</p>

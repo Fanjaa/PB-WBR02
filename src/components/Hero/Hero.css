@@ -51,11 +51,17 @@
     background-color: var(--white-color);
     border-radius: 15px;
     padding: 5px;
-    transform: rotate(15deg) translateY(-10px)  translateX(-20px);
+    transform: rotate(15deg) translateY(-10px) translateX(-20px);
+    transition: 0.3s ease-out;
 }
 
 .image-item:nth-last-child(2) {
     transform: rotate(-10deg) translateY(15px);
+}
+
+.image-item:hover {
+    z-index: 10;
+    transform: scale(150%);
 }
 
 .image-item>img{

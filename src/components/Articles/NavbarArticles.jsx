@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import '../Navbar/Navbar'
 import { assets } from '../../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import ComingSoonFeatures from '../ComingSoonFeatures'
 
 
 const NavbarArticles = () => {
@@ -47,7 +48,7 @@ const NavbarArticles = () => {
     <div className="header">
       <div className='navbar'>
         <div className="navbar-logo">
-          <img src={assets.logoNew} alt="" />
+          <a href="/"><img src={assets.logoNew} alt="" /></a>
         </div>
         <div className={`navbar-list ${isMenuActive ? 'active' : ''}`}>
           <ul>
@@ -57,7 +58,7 @@ const NavbarArticles = () => {
           </ul>
         </div>
         <div className="booking">
-          <p>Booking</p>
+          <button onClick={() => ComingSoonFeatures()}>Booking</button>
         </div>
         <div className="menu-navbar" id='menu-navbar' onClick={handleMenu}>
           <img src={isMenuActive ? assets.closeIcon : assets.menuIcon} />

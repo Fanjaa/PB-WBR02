@@ -2,8 +2,12 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import ComingSoonFeatures from '../ComingSoonFeatures'
 
 const Footer = () => {
+
+  const AlertAccount = 'Account will be released soon!';
+
   return (
     <div id='footer' className='footer'>
       <div className="footer-content">
@@ -12,8 +16,8 @@ const Footer = () => {
         </div>
         <div className="content-right-footer">
           <a href="https://www.tiktok.com/@pb.wbr02" target='_blank' rel="noopener noreferrer"><img src={assets.tiktokIcons} alt="Tiktok Icon" /></a>
-          <a href="#"><img src={assets.instagramIcon} alt="Instagram Icon" /></a>
-          <a href="#"><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
+          <a onClick={() => ComingSoonFeatures(AlertAccount)}><img src={assets.instagramIcon} alt="Instagram Icon" /></a>
+          <a onClick={() => ComingSoonFeatures(AlertAccount)}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
         </div>
       </div>      
     </div>
