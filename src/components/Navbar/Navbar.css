@@ -199,5 +199,11 @@
     }
 }
 
+@media (max-width: 1248px) and (max-height: 600px) {
+    .booking {
+        margin-left: 30px;
+    }
+}
+
 
 
