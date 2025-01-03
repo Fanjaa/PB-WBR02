@@ -93,6 +93,10 @@
         position: absolute;
         top: 180%;
     }
+    .content-title>h1, .content-title>h2 {
+        width: 100vw;
+        text-align: center;
+    }
 }
 
 @media (max-width: 1024px) {
