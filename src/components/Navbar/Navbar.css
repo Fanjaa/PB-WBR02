@@ -5,7 +5,6 @@
     justify-content: center;
     z-index: 999;
     transition: position 0.3s ease-in-out;
-    scroll-behavior: smooth;
 }
 
 .header.scrolled {
@@ -32,7 +31,6 @@
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5); 
     color: white;
-    /* color: var(--primary-text-color); */
 }
 
 .navbar.scrolled {
@@ -40,11 +38,6 @@
     backdrop-filter: none;
     background: transparent;
     border: none;
-    /* width: 100%;
-    border-radius: 0;
-    padding: 20px 80px;
-    border: none;
-    border-bottom: 1px solid ; */
 }
 
 .navbar-logo {
@@ -55,8 +48,6 @@
 .navbar-logo>a>img {
     width: 35px;
     cursor: pointer;
-    /* border-radius: 10px 5px 10px 5px; */
-    /* background-color: white; */
 }
 
 .navbar-list {
@@ -79,7 +70,6 @@
     list-style-type: none;
     text-decoration: none;
     color: white;
-    /* color: var(--primary-text-color); */
 }
 
 .navbar-list>ul>li>a,  .booking>button{
@@ -110,6 +100,55 @@
 
 .menu-navbar {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        position: fixed;
+        top: -20px;
+        width: 100%;
+    }
+    .navbar-logo {
+        width: auto;
+     }
+    .navbar-list {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        bottom: 10%;
+        border: none;
+        width: 30vw;
+        height: 150vh;
+        transition: 0.75s ease-out;
+        background-color: black;
+    }
+    .navbar-list.active {
+        display: block;
+        right: 0%;
+    }
+    .navbar-list>ul {
+        display: inline-block;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5); 
+        top: 10%;
+        width: 100%;
+        height: 100%;
+    }
+    .navbar-list>ul>li {
+        padding: 20px 40px;
+        border-bottom: 1px solid;
+    }
+    .navbar {
+        width: 100%; 
+        border-radius: 0; 
+        border: none; 
+        right: 10%;
+        background-color: black;
+    }
+    .menu-navbar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -147,9 +186,6 @@
         padding: 10px 40px;
         border-bottom: 1px solid;
     }
-    /* .navbar-list>ul>li:nth-last-child(1) {
-        border-bottom: none;
-    } */
     .navbar {
         width: 100%; 
         border-radius: 0; 

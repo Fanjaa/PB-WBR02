@@ -2,7 +2,6 @@
 import React from 'react'
 import './Stories.css'
 import { assets } from '../../assets/assets'
-import ComingSoonFeatures from '../ComingSoonFeatures'
 
 const Stories = () => {
   return (
@@ -22,7 +21,7 @@ const Stories = () => {
             <div className="stories-paragraph" data-aos="fade-right" data-aos-duration="1000">
               <h1>Semangat Kerjasama dalam Mencapai Keberhasilan</h1>
               <p>Keberhasilan dalam kompetisi tidak hanya ditentukan oleh kemampuan individu, tetapi juga oleh semangat kerjasama tim. Kolaborasi yang baik antar anggota tim menciptakan sinergi yang luar biasa, yang mampu mengatasi tantangan dan mencapai tujuan bersama.</p>
-              <p onClick={() => ComingSoonFeatures('Article will be update soon!')}><a>Lebih Lanjut</a><img src={assets.arrowOutward} alt="" /></p>
+              <p><a href='./article/semangat-kerjasama-dalam-mencapai-keberhasilan'>Lebih Lanjut</a><img src={assets.arrowOutward} alt="" /></p>
             </div>
           </div>
           <div className="stories-grid-items" id='imageTwo'>

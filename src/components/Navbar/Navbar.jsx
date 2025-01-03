@@ -4,8 +4,12 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import ComingSoonFeatures from '../ComingSoonFeatures'
 import SmoothScroll from '../SmoothScroll'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
+
+  const location = useLocation();
+  const navigate = useNavigate();
   
   useEffect(() => {
     // Handle Responsive Navbar Scroll 
@@ -13,7 +17,7 @@ const Navbar = () => {
       const header = document.querySelector('.header');
       const navbar = document.querySelector('.navbar');
 
-      if (window.scrollY > 20  && window.innerWidth > 1200) {
+      if (window.scrollY > 20  && window.innerWidth > 1024) {
         header.classList.add('scrolled'); 
         navbar.classList.add('scrolled'); 
       } else {
@@ -49,21 +53,35 @@ const Navbar = () => {
     <div className="header">
       <div className='navbar' ref={navbarRef}>
         <div className="navbar-logo">
-          <a href="/"><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
+          {location.pathname === '/' ? (
+            <a onClick={() => SmoothScroll('hero')}><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
+          ):(
+            <a href="/"><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
+          )}
         </div>
         <div className={`navbar-list ${isMenuActive ? 'active' : ''}`} >
           <ul>
-            <li><a onClick={() => SmoothScroll('hero')}>Home</a></li>
-            <li><a onClick={() => SmoothScroll('main')}>Panitia</a></li>
-            <li><a onClick={() => SmoothScroll('intro')}>Intro</a></li>
-            <li><a onClick={() => SmoothScroll('tournament')}>Tournament</a></li>
-            <li><a onClick={() => SmoothScroll('teams')}>Teams</a></li>
-            <li><a onClick={() => SmoothScroll('stories')}>Stories</a></li>
-            <li><a onClick={() => SmoothScroll('footer')}>Footer</a></li>
+            {location.pathname === '/' ? (
+              <>
+              <li><a onClick={() => SmoothScroll('hero')}>Beranda</a></li>
+              <li><a onClick={() => SmoothScroll('main')}>Panitia</a></li>
+              <li><a onClick={() => SmoothScroll('intro')}>Dokumentasi</a></li>
+              <li><a onClick={() => SmoothScroll('tournament')}>Artikel</a></li>
+              <li><a onClick={() => SmoothScroll('teams')}>Tim</a></li>
+              <li><a onClick={() => SmoothScroll('stories')}>Cerita</a></li>
+              <li><a onClick={() => SmoothScroll('footer')}>Informasi</a></li>                
+              </>
+            ) : (
+              <>
+              <li><a onClick={() => navigate('/')}>Beranda</a></li>
+              <li><a onClick={() => SmoothScroll('articles')}>Artikel</a></li>
+              <li><a onClick={() => SmoothScroll('footer')}>Informasi</a></li>  
+              </>
+            )}
           </ul>
         </div>
         <div className="booking">
-          <button onClick={() => ComingSoonFeatures()}>Booking</button>
+          <button onClick={() => ComingSoonFeatures()}>Daftar</button>
         </div>
         <div className="menu-navbar" id='menu-navbar' onClick={handleMenu}>
           <img src={isMenuActive ? assets.closeIcon : assets.menuIcon} />

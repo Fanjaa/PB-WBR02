@@ -2,7 +2,6 @@
 import React from 'react'
 import { assets } from '../../assets/assets'
 import './Teams.css'
-import ComingSoonFeatures from '../ComingSoonFeatures'
 
 const Teams = () => {
   return (
@@ -12,7 +11,7 @@ const Teams = () => {
           <img src={assets.beforePlay} alt="Moment Image" />
           <div className="content-card-paragraph">
             <p>PB WBR 02 adalah ajang kompetisi badminton tahunan yang diadakan oleh PB WBR. Dikenal karena atmosfernya yang kompetitif dan penuh semangat, turnamen ini mempertemukan pemain dari berbagai level, dengan tujuan untuk mengembangkan bakat dan mempererat persahabatan antar pemain.</p>
-            <p onClick={() => ComingSoonFeatures('Article will be update soon!')}><a>Lebih Lanjut</a><img src={assets.arrowOutward} alt="" /></p>
+            <p><a href='./article/ajang-kompetisi-bulu-tangkis-tahunan-yang-penuh-semangat'>Lebih Lanjut</a><img src={assets.arrowOutward} alt="" /></p>
           </div>
         </div>
         <div className="content-paragraph">

@@ -18,9 +18,16 @@
     margin: 20px;
 }
 
+.content-left-footer>p>a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
 .content-right-footer {
     display: flex;
     gap: 20px;
+    margin-left: 20px;
 }
 
 .content-right-footer>a>img {
