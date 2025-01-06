@@ -8,11 +8,11 @@ const Hero = () => {
     <div className="hero" id='hero'>
         <div className="hero-content">
             <div className="content-box">
-                <div className="content-title" data-aos="fade-up" data-aos-duration="1000">
+                <div className="content-title">
                 <h1>Bersama PB WBR 02</h1>
                 <h2>Raih Prestasi di Dunia Badminton!</h2>
                 </div>
-                <div className="content-image" data-aos="zoom-out" data-aos-duration="2500">
+                <div className="content-image">
                 <div className="image-item">
                     <img src={assets.beforePlay} alt="Moment Image" loading='lazy'/>
                     <p>Moment</p>

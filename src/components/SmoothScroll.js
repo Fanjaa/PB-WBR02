@@ -2,7 +2,10 @@
 import React from 'react'
 
   // Handle Scroll to Section
-  const SmoothScroll = (id) => {
+  const SmoothScroll = (e, id) => {
+    if (e) {
+      e.preventDefault(); 
+    }
     
     const section = document.getElementById(id);
     if (section) {

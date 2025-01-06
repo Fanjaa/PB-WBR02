@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="content-right-footer">
           <a href="https://www.tiktok.com/@pb.wbr02" target='_blank' rel="noopener noreferrer"><img src={assets.tiktokIcons} alt="Tiktok Icon" /></a>
           <a href={generateMailToLink()}><img src={assets.gmailIcon} alt="Instagram Icon" /></a>
-          <a onClick={() => ComingSoonFeatures(AlertAccount)}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
+          <a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures(AlertAccount)}}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
         </div>
       </div>      
     </div>

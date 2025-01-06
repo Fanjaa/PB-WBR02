@@ -3,8 +3,8 @@ import backgroundTournament from './background_tournament.jpg'
 import logoOld from './logo_old.png'
 import logoNew from './logoTransparent.png'
 import panitiaImage from './panitia_1.jpg'
-import panitia2Image from './panitia_2.jpg'
-import beforePlay from './before_play.jpg'
+import panitia2Image from './panitia_2.webp'
+import beforePlay from './before_play.webp'
 import arrowOutward from './icons/arrow_outward.svg'
 import instagramIcon from './icons/instagram.svg'
 import tiktokIcons from './icons/tiktok.svg'
@@ -37,6 +37,8 @@ import juara2LvlB from './tournament/juara2_LevelB_Cup1.png'
 import juara1LvlC from './tournament/juara1_LevelC_Cup1.png'
 import juara2LvlC from './tournament/juara2_LevelC_Cup1.png'
 import momentCup1 from './tournament/momen_CUP1.png'
+
+import subtitleVideo from './subtitle.vtt'
 
 export const assets = {
     backgroundPrimary,
@@ -75,5 +77,6 @@ export const assets = {
     juara2LvlB,
     juara1LvlC,
     juara2LvlC,
-    momentCup1
+    momentCup1,
+    subtitleVideo
 }

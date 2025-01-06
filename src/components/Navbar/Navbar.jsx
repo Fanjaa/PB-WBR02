@@ -4,12 +4,11 @@ import './Navbar.css'
 import { assets } from '../../assets/assets'
 import ComingSoonFeatures from '../ComingSoonFeatures'
 import SmoothScroll from '../SmoothScroll'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 
 const Navbar = () => {
 
   const location = useLocation();
-  const navigate = useNavigate();
   
   useEffect(() => {
     // Handle Responsive Navbar Scroll 
@@ -54,7 +53,7 @@ const Navbar = () => {
       <div className='navbar' ref={navbarRef}>
         <div className="navbar-logo">
           {location.pathname === '/' ? (
-            <a onClick={() => SmoothScroll('hero')}><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
+            <a href='#hero' onClick={(e) => SmoothScroll(e, 'hero')}><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
           ):(
             <a href="/"><img src={assets.logoNew} alt="Logo PB WBR 02" /></a>
           )}
@@ -63,19 +62,19 @@ const Navbar = () => {
           <ul>
             {location.pathname === '/' ? (
               <>
-              <li><a onClick={() => SmoothScroll('hero')}>Beranda</a></li>
-              <li><a onClick={() => SmoothScroll('main')}>Panitia</a></li>
-              <li><a onClick={() => SmoothScroll('intro')}>Dokumentasi</a></li>
-              <li><a onClick={() => SmoothScroll('tournament')}>Artikel</a></li>
-              <li><a onClick={() => SmoothScroll('teams')}>Tim</a></li>
-              <li><a onClick={() => SmoothScroll('stories')}>Cerita</a></li>
-              <li><a onClick={() => SmoothScroll('footer')}>Informasi</a></li>                
+              <li><a href='#hero' onClick={(e) => SmoothScroll(e, 'hero')}>Beranda</a></li>
+              <li><a href='#main' onClick={(e) => SmoothScroll(e, 'main')}>Panitia</a></li>
+              <li><a href='#intro' onClick={(e) => SmoothScroll(e, 'intro')}>Dokumentasi</a></li>
+              <li><a href='#tournament' onClick={(e) => SmoothScroll(e, 'tournament')}>Artikel</a></li>
+              <li><a href='#teams' onClick={(e) => SmoothScroll(e, 'teams')}>Tim</a></li>
+              <li><a href='#stories' onClick={(e) => SmoothScroll(e, 'stories')}>Cerita</a></li>
+              <li><a href='#about' onClick={(e) => SmoothScroll(e, 'about')}>Informasi</a></li>                
               </>
             ) : (
               <>
-              <li><a onClick={() => navigate('/')}>Beranda</a></li>
-              <li><a onClick={() => SmoothScroll('articles')}>Artikel</a></li>
-              <li><a onClick={() => SmoothScroll('footer')}>Informasi</a></li>  
+              <li><a href='/'>Beranda</a></li>
+              <li><a href='#articles' onClick={(e) => SmoothScroll(e, 'articles')}>Artikel</a></li>
+              <li><a href='#about' onClick={(e) => SmoothScroll(e, 'about')}>Informasi</a></li>  
               </>
             )}
           </ul>
@@ -84,7 +83,7 @@ const Navbar = () => {
           <button onClick={() => ComingSoonFeatures()}>Daftar</button>
         </div>
         <div className="menu-navbar" id='menu-navbar' onClick={handleMenu}>
-          <img src={isMenuActive ? assets.closeIcon : assets.menuIcon} />
+          <img src={isMenuActive ? assets.closeIcon : assets.menuIcon} alt='Hamburger Menu' />
         </div>
       </div>
     </div>
