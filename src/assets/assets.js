@@ -1,5 +1,5 @@
 import backgroundPrimary from './background.jpeg'
-import backgroundTournament from './background_tournament.jpg'
+import backgroundTournament from './background_tournament.webp'
 import logoOld from './logo_old.png'
 import logoNew from './logoTransparent.png'
 import panitiaImage from './panitia_1.jpg'
