@@ -1,5 +1,5 @@
 .modal-overlay {
-    position: absolute;
+    position: fixed;
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -60,16 +60,14 @@
     background-color: gray;
 }
 
-@media (max-width: 768px) {
-    .modal-content {
-        min-width: 85vw;
-    }
-    
-}
-
 @media (max-width: 1024px) {
     .modal-content {
         min-width: 60vw;
     }
-    
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        min-width: 90vw;
+    }
 }
