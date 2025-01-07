@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import './About.css'
 import { assets } from '../../assets/assets'
-import ComingSoonFeatures from './../ComingSoonFeatures'
 import SmoothScroll from '../SmoothScroll'
 import { useLocation } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-const About = () => {
+const About = ({openModal}) => {
      
         const [emailInput, setEmailInput] = useState("");
     
@@ -41,7 +41,8 @@ const About = () => {
                         <li><a href="https://www.nipponpaint-indonesia.com/" target='_blank' rel='noopener noreferrer'>Nippon Paint</a></li>
                         <li><a href="https://www.rsbhaktiasih.com/" target='_blank' rel='noopener noreferrer'>RSU Bhakti Asih</a></li>
                         <li><a href="https://www.semuabis.com/edy-b-0813-8868-8482" target='_blank' rel='noopener noreferrer'>Toko Edy B.Lembang</a></li>
-                        <li onClick={() => ComingSoonFeatures('Website not found, only offline store!')}>David Tailor</li>
+                        <li><a href="#" onClick={() => openModal("Sponsor Ini Belum Memiliki Website")}>David Tailor</a></li>
+                        {/* <li onClick={() => ComingSoonFeatures('Website not found, only offline store!')}>David Tailor</li> */}
                     </ul>
                 </div>
                 <div className="content-right-items">
@@ -83,16 +84,21 @@ const About = () => {
                 <div className="content-right-items">
                     <h1>KEBIJAKAN</h1>
                     <ul>
-                        <li><a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures()}}>Kebijakan Privasi</a></li>
-                        <li><a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures()}}>Syarat & Ketentuan</a></li>
-                        <li><a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures()}}>Kebijakan Pengembalian</a></li>
+                        <li><a href='#' onClick={() => openModal()}>Kebijakan Privasi</a></li>
+                        <li><a href='#' onClick={() => openModal()}>Syarat & Ketentuan</a></li>
+                        <li><a href='#' onClick={() => openModal()}>Kebijakan Pengembalian</a></li>
                     </ul>
                 </div>
             </div>
-        </div>
-      
+        </div>   
     </div>
   )
 }
+
+
+About.propTypes = {
+  openModal: PropTypes.func.isRequired,
+};
+
 
 export default About

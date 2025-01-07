@@ -4,9 +4,10 @@ import './Articles.css'
 import { assets } from '../../assets/assets'
 import DataArticle from '../../data/DataArticle'
 import { useParams } from 'react-router-dom';
-import ComingSoonFeatures from '../../components/ComingSoonFeatures'
+import PropTypes from 'prop-types';
+// import ComingSoonFeatures from '../../components/ComingSoonFeatures'
 
-const Articles = () => {
+const Articles = ({openModal}) => {
     const { slug } = useParams();
 
     const article = DataArticle.find(article => article.title.toLowerCase() === slug.toLowerCase());
@@ -30,7 +31,7 @@ const Articles = () => {
                     <p>Share</p>
                     <div className="icons-share">
                         <a href={`https://wa.me/?text="${article.title.toUpperCase().replace(/-/g, ' ')}."%0A%0ACheck out this awesome story! https://pbwbr02.netlify.app/article/${article.title}`} target='_blank' rel='noopener noreferrer'><img src={assets.whatsappIcon} alt="Whatsapp Icon" loading="lazy" /></a>
-                        <a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures('share to instagram will be released soon, you can share to whatsapp or x')}}><img src={assets.instagramIcon} alt="Instagram Icon" loading="lazy" /></a>
+                        <a href='#' onClick={() => openModal("Fitur Share Saat Ini Hanya Bisa Untuk Whatsapp atau X")}><img src={assets.instagramIcon} alt="Instagram Icon" /></a>
                         <a href={`https://x.com/intent/tweet?url=https://pbwbr02.netlify.app/article/${article.title}&text="${article.title.toUpperCase().replace(/-/g, ' ')}."%0A%0ACheck out this story!`} target='_blank' rel='noopener noreferrer'><img src={assets.xIcon} alt="Twitter Icon" loading="lazy" /></a>
                     </div>
                 </div>
@@ -45,5 +46,10 @@ const Articles = () => {
     </div>
   )
 }
+
+Articles.propTypes = {
+  openModal: PropTypes.func.isRequired,
+};
+
 
 export default Articles

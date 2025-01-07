@@ -2,11 +2,9 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
-import ComingSoonFeatures from '../ComingSoonFeatures'
+import PropTypes from 'prop-types';
 
-const Footer = () => {
-
-  const AlertAccount = 'Official Whatsapp account will be released soon!';
+const Footer = ({ openModal }) => {
 
   const generateMailToLink = () => {
     const subject = "PB WBR 02 LANDING PAGE";
@@ -23,11 +21,16 @@ const Footer = () => {
         <div className="content-right-footer">
           <a href="https://www.tiktok.com/@pb.wbr02" target='_blank' rel="noopener noreferrer"><img src={assets.tiktokIcons} alt="Tiktok Icon" /></a>
           <a href={generateMailToLink()}><img src={assets.gmailIcon} alt="Instagram Icon" /></a>
-          <a href='#' onClick={(e) => {e.preventDefault(); ComingSoonFeatures(AlertAccount)}}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
+          <a href='#' onClick={() => openModal("Akun Whatsapp Resmi Belum Tersedia")}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
         </div>
       </div>      
     </div>
   )
 }
+
+Footer.propTypes = {
+  openModal: PropTypes.func.isRequired,
+};
+
 
 export default Footer

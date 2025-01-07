@@ -7,6 +7,7 @@ import instagramIcon from './icons/instagram.svg'
 import tiktokIcons from './icons/tiktok.svg'
 import whatsappIcon from './icons/whatsapp.svg'
 import xIcon from './icons/X_icon.svg'
+import ComingSoonIcon from './icons/coming-soon-icon.svg'
 import gmailIcon from './icons/gmail.svg'
 import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
@@ -47,6 +48,7 @@ export const assets = {
     tiktokIcons,
     whatsappIcon,
     xIcon,
+    ComingSoonIcon,
     gmailIcon,
     menuIcon,
     closeIcon,

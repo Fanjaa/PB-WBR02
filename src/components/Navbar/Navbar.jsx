@@ -2,11 +2,11 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
 import { assets } from '../../assets/assets'
-import ComingSoonFeatures from '../ComingSoonFeatures'
 import SmoothScroll from '../SmoothScroll'
 import { useLocation } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
-const Navbar = () => {
+const Navbar = ({openModal}) => {
 
   const location = useLocation();
   
@@ -80,7 +80,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="booking">
-          <button onClick={() => ComingSoonFeatures()}>Daftar</button>
+          <button onClick={() => openModal("Nantikan Turnamen Berikutnya")}>Daftar</button>
         </div>
         <div className="menu-navbar" id='menu-navbar' onClick={handleMenu}>
           <img src={isMenuActive ? assets.closeIcon : assets.menuIcon} alt='Hamburger Menu' />
@@ -89,5 +89,10 @@ const Navbar = () => {
     </div>
   )
 }
+
+Navbar.propTypes = {
+  openModal: PropTypes.func.isRequired,
+};
+
 
 export default Navbar
