@@ -27,6 +27,7 @@
 
 .content-left>img {
     width: 80px;
+    height: 80px;
 }
 
 .content-left>.input-email {
@@ -99,6 +100,7 @@
      }
     .content-left>img {
         width: 100px;
+        height: 100px;
     }
     .content-left>p {
         display: flex;

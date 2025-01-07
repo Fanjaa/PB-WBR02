@@ -1,8 +1,5 @@
-import backgroundPrimary from './background.jpeg'
 import backgroundTournament from './background_tournament.webp'
-import logoOld from './logo_old.png'
-import logoNew from './logoTransparent.png'
-import panitiaImage from './panitia_1.jpg'
+import logoNew from './logoTransparent.webp'
 import panitia2Image from './panitia_2.webp'
 import beforePlay from './before_play.webp'
 import arrowOutward from './icons/arrow_outward.svg'
@@ -16,36 +13,33 @@ import closeIcon from './icons/close.svg'
 import videoCup1 from './videoCup1.mp4'
 import thumbnail from './thumbnail.png'
 
-import fanja from './profilePanitia/fanja.jpg'
-import burhan from './profilePanitia/burhan.png'
-import cb from './profilePanitia/cb.png'
-import nimung from './profilePanitia/nimung.png'
-import anonym from './profilePanitia/anonym.png'
-import anza from './profilePanitia/anza.png'
-import didi from './profilePanitia/didi.png'
-import wawan from './profilePanitia/wawan.png'
-import iwan from './profilePanitia/iwan.png'
-import lucky from './profilePanitia/lucky.png'
-import pepen from './profilePanitia/pepen.png'
-import rahmat from './profilePanitia/rahmat.png'
-import sahrim from './profilePanitia/sahrim.png'
+import fanja from './profilePanitia/fanja.webp'
+import burhan from './profilePanitia/burhan.webp'
+import cb from './profilePanitia/cb.webp'
+import nimung from './profilePanitia/nimung.webp'
+import anonym from './profilePanitia/anonym.webp'
+import anza from './profilePanitia/anza.webp'
+import didi from './profilePanitia/didi.webp'
+import wawan from './profilePanitia/wawan.webp'
+import iwan from './profilePanitia/iwan.webp'
+import lucky from './profilePanitia/lucky.webp'
+import pepen from './profilePanitia/pepen.webp'
+import rahmat from './profilePanitia/rahmat.webp'
+import sahrim from './profilePanitia/sahrim.webp'
 
-import juara1LvlA from './tournament/juara1_LevelA_Cup1.png'
-import juara2LvlA from './tournament/juara2_LevelA_Cup1.png'
-import juara1LvlB from './tournament/juara1_LevelB_Cup1.png'
-import juara2LvlB from './tournament/juara2_LevelB_Cup1.png'
-import juara1LvlC from './tournament/juara1_LevelC_Cup1.png'
-import juara2LvlC from './tournament/juara2_LevelC_Cup1.png'
-import momentCup1 from './tournament/momen_CUP1.png'
+import juara1LvlA from './tournament/juara1_LevelA_Cup1.webp'
+import juara2LvlA from './tournament/juara2_LevelA_Cup1.webp'
+import juara1LvlB from './tournament/juara1_LevelB_Cup1.webp'
+import juara2LvlB from './tournament/juara2_LevelB_Cup1.webp'
+import juara1LvlC from './tournament/juara1_LevelC_Cup1.webp'
+import juara2LvlC from './tournament/juara2_LevelC_Cup1.webp'
+import momentCup1 from './tournament/momen_CUP1.webp'
 
 import subtitleVideo from './subtitle.vtt'
 
 export const assets = {
-    backgroundPrimary,
     backgroundTournament,
-    logoOld,
     logoNew,
-    panitiaImage,
     panitia2Image,
     beforePlay,
     arrowOutward,

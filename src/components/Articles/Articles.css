@@ -61,6 +61,7 @@
 
 .content-article-info>.share>.icons-share>a>img {
     width: 20px;
+    height: 20px;
     object-fit: contain;
     cursor: pointer;
 }
