@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './About.css'
 import { assets } from '../../assets/assets'
 import SmoothScroll from '../SmoothScroll'

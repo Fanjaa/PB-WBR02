@@ -1,6 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-
   // Handle Scroll to Section
   const SmoothScroll = (e, id) => {
     if (e) {

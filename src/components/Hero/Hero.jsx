@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
 import { assets } from '../../assets/assets'
 import './Hero.css'
 
@@ -14,11 +12,11 @@ const Hero = () => {
                 </div>
                 <div className="content-image">
                 <div className="image-item">
-                <img src={assets.beforePlay195w} alt="Panitia Image" />
+                <img src={assets.beforePlay525w} alt="Panitia Image" />
                     <p>Moment</p>
                 </div>
                 <div className="image-item">
-                    <img src={assets.panitia195w} alt="Panitia Image" />
+                    <img src={assets.panitia525w} alt="Panitia Image" />
                     <p>Panitia</p>
                 </div>
             </div>

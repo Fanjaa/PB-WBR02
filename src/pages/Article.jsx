@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Articles from '../components/Articles/Articles'
 import About from '../components/About/About'
 import Footer from '../components/Footer/Footer'

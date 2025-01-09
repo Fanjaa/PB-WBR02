@@ -1,5 +1,3 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
 import './Stories.css'
 import { assets } from '../../assets/assets'
 
@@ -8,7 +6,7 @@ const Stories = () => {
     <div id='stories' className='stories'>
         <div className="stories-grid">
           <div className="stories-grid-items" id='imageOne'>
-            <img src={assets.backgroundTournament300w} alt="Sportivitas Image"/>
+            <img src={assets.backgroundTournament} alt="Sportivitas Image"/>
           </div>
           <div className="stories-grid-items" id='paragraphOne' >
             <div className="stories-paragraph" data-aos="fade-up" data-aos-duration="1000">
@@ -26,17 +24,7 @@ const Stories = () => {
           </div>
           <div className="stories-grid-items" id='imageTwo'>
             <img 
-            src={assets.beforePlay300w}
-            srcSet={`
-                ${assets.beforePlay300w} 300w,
-                ${assets.beforePlay723w} 723w,
-                ${assets.beforePlay1080w} 1080w,
-                ${assets.beforePlay1480w} 1480w,
-                ${assets.beforePlay1790w} 1790w,
-                ${assets.beforePlay2048w} 2048w
-            `}
-            sizes="(min-width: 1080px) 50vw, (min-width: 1040px) 628px, 100vw"
-            alt="Before Play Image" />
+            src={assets.beforePlay} alt="Before Play Image" />
           </div>
         </div>
     </div>
