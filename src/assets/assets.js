@@ -12,7 +12,7 @@ import gmailIcon from './icons/gmail.svg'
 import menuIcon from './icons/menu.svg'
 import closeIcon from './icons/close.svg'
 import videoCup1 from './videoCup1.mp4'
-import thumbnail from './thumbnail.png'
+import thumbnail from './thumbnail.webp'
 
 import fanja from './profilePanitia/fanja.webp'
 import burhan from './profilePanitia/burhan.webp'

@@ -19,9 +19,9 @@ const Footer = ({ openModal }) => {
           <p>&copy;	Copyright {new Date().getFullYear()} PB WBR 02 by <a href="https://portofolio-fanja.netlify.app/" target="_blank" rel="noopener noreferrer">Fanjaaa_</a></p>
         </div>
         <div className="content-right-footer">
-          <a href="https://www.tiktok.com/@pb.wbr02" target='_blank' rel="noopener noreferrer"><img src={assets.tiktokIcons} alt="Tiktok Icon" /></a>
-          <a href={generateMailToLink()}><img src={assets.gmailIcon} alt="Instagram Icon" /></a>
-          <a href='#' onClick={(e) => {e.preventDefault(); openModal("Akun Whatsapp Resmi Belum Tersedia")}}><img src={assets.whatsappIcon} alt="Whatsapp Icon" /></a>
+          <a href="https://www.tiktok.com/@pb.wbr02" target='_blank' rel="noopener noreferrer"><img src={assets.tiktokIcons} alt="Tiktok Icon" loading='lazy' /></a>
+          <a href={generateMailToLink()}><img src={assets.gmailIcon} alt="Instagram Icon" loading='lazy' /></a>
+          <a href='#' onClick={(e) => {e.preventDefault(); openModal("Akun Whatsapp Resmi Belum Tersedia")}}><img src={assets.whatsappIcon} alt="Whatsapp Icon" loading='lazy' /></a>
         </div>
       </div>      
     </div>
