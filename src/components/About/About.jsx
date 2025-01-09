@@ -41,7 +41,7 @@ const About = ({openModal}) => {
                         <li><a href="https://www.nipponpaint-indonesia.com/" target='_blank' rel='noopener noreferrer'>Nippon Paint</a></li>
                         <li><a href="https://www.rsbhaktiasih.com/" target='_blank' rel='noopener noreferrer'>RSU Bhakti Asih</a></li>
                         <li><a href="https://www.semuabis.com/edy-b-0813-8868-8482" target='_blank' rel='noopener noreferrer'>Toko Edy B.Lembang</a></li>
-                        <li><a href="#" onClick={() => openModal("Sponsor Ini Belum Memiliki Website")}>David Tailor</a></li>
+                        <li><a href="#" onClick={(e) => {e.preventDefault(); openModal("Sponsor Ini Belum Memiliki Website")}}>David Tailor</a></li>
                         {/* <li onClick={() => ComingSoonFeatures('Website not found, only offline store!')}>David Tailor</li> */}
                     </ul>
                 </div>
@@ -84,9 +84,9 @@ const About = ({openModal}) => {
                 <div className="content-right-items">
                     <h1>KEBIJAKAN</h1>
                     <ul>
-                        <li><a href='#' onClick={() => openModal()}>Kebijakan Privasi</a></li>
-                        <li><a href='#' onClick={() => openModal()}>Syarat & Ketentuan</a></li>
-                        <li><a href='#' onClick={() => openModal()}>Kebijakan Pengembalian</a></li>
+                        <li><a href='#' onClick={(e) => {e.preventDefault(); openModal()}}>Kebijakan Privasi</a></li>
+                        <li><a href='#' onClick={(e) => {e.preventDefault(); openModal()}}>Syarat & Ketentuan</a></li>
+                        <li><a href='#' onClick={(e) => {e.preventDefault(); openModal()}}>Kebijakan Pengembalian</a></li>
                     </ul>
                 </div>
             </div>

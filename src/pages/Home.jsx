@@ -17,7 +17,7 @@ const Home = () => {
   
   useEffect(() => {
     Aos.init({
-      once: true,
+      // once: true,
     });
 }, [])
 

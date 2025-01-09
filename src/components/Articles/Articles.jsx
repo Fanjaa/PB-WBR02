@@ -31,7 +31,7 @@ const Articles = ({openModal}) => {
                     <p>Share</p>
                     <div className="icons-share">
                         <a href={`https://wa.me/?text="${article.title.toUpperCase().replace(/-/g, ' ')}."%0A%0ACheck out this awesome story! https://pbwbr02.netlify.app/article/${article.title}`} target='_blank' rel='noopener noreferrer'><img src={assets.whatsappIcon} alt="Whatsapp Icon" loading="lazy" /></a>
-                        <a href='#' onClick={() => openModal("Fitur Share Saat Ini Hanya Bisa Untuk Whatsapp atau X")}><img src={assets.instagramIcon} alt="Instagram Icon" /></a>
+                        <a href='#' onClick={(e) => {e.preventDefault(); openModal("Fitur Share Saat Ini Hanya Bisa Untuk Whatsapp atau X")}}><img src={assets.instagramIcon} alt="Instagram Icon" /></a>
                         <a href={`https://x.com/intent/tweet?url=https://pbwbr02.netlify.app/article/${article.title}&text="${article.title.toUpperCase().replace(/-/g, ' ')}."%0A%0ACheck out this story!`} target='_blank' rel='noopener noreferrer'><img src={assets.xIcon} alt="Twitter Icon" loading="lazy" /></a>
                     </div>
                 </div>

@@ -28,7 +28,7 @@ const DataPanitia = [
     },
     {
         id: 5,
-        name: 'Anonym',
+        name: 'Fikri',
         role: 'Wasit 2',
         image: 'anonym'
     },
