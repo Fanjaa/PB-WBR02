@@ -3,6 +3,7 @@ import backgroundTournament525w from './background_tournament_525w.webp'
 import backgroundTournament300w from './background_tournament_300w.webp'
 import logoNew from './logoTransparent.webp'
 import panitia195w from './panitia_195w.webp'
+import panitia300w from './panitia_300w.webp'
 import panitia525w from './panitia_525w.webp'
 import panitia649w from './panitia_649w.webp'
 import panitia2Image from './panitia_2.webp'
@@ -59,6 +60,7 @@ export const assets = {
     logoNew,
     panitia2Image,
     panitia195w,
+    panitia300w,
     panitia525w,
     panitia649w,
     beforePlay,

@@ -2,7 +2,7 @@ const DataTournament = [
     {
         id: 1,
         title: 'PB WBR 02',
-        image: 'panitia525w',
+        image: 'panitia300w',
         content: 'Ajang Kompetisi Bulu Tangkis Tahunan yang Penuh Semangat',
         url: './article/ajang-kompetisi-bulu-tangkis-tahunan-yang-penuh-semangat'
     },
