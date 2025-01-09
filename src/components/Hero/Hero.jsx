@@ -14,11 +14,11 @@ const Hero = () => {
                 </div>
                 <div className="content-image">
                 <div className="image-item">
-                    <img src={assets.beforePlay} alt="Moment Image"/>
+                <img src={assets.beforePlay195w} alt="Panitia Image" />
                     <p>Moment</p>
                 </div>
                 <div className="image-item">
-                    <img src={assets.panitia2Image} alt="Panitia Image"/>
+                    <img src={assets.panitia195w} alt="Panitia Image" />
                     <p>Panitia</p>
                 </div>
             </div>

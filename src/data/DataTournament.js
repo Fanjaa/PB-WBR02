@@ -5,7 +5,7 @@ const DataTournament = [
     {
         id: 1,
         title: 'PB WBR 02',
-        image: 'panitia2Image',
+        image: 'panitia525w',
         content: 'Ajang Kompetisi Bulu Tangkis Tahunan yang Penuh Semangat',
         url: './article/ajang-kompetisi-bulu-tangkis-tahunan-yang-penuh-semangat'
     },
@@ -61,14 +61,14 @@ const DataTournament = [
     {
         id: 9,
         title: 'Momen Sportivitas',
-        image: 'backgroundTournament',
+        image: 'backgroundTournament525w',
         content: 'Momen sikap sportif, mendukung dan saling menghormati.',
         url: './article/membangun-sportivitas-yang-tinggi-dalam-kompetisi'
     },
     {
         id: 10,
         title: 'Kerjasama Tim',
-        image: 'beforePlay',
+        image: 'beforePlay525w',
         content: 'Semangat Kerjasama dalam Mencapai Keberhasilan',
         url: './article/semangat-kerjasama-dalam-mencapai-keberhasilan'
     },

@@ -1,7 +1,21 @@
 import backgroundTournament from './background_tournament.webp'
+import backgroundTournament525w from './background_tournament_525w.webp'
+import backgroundTournament300w from './background_tournament_300w.webp'
 import logoNew from './logoTransparent.webp'
+import panitia195w from './panitia_195w.webp'
+import panitia525w from './panitia_525w.webp'
+import panitia649w from './panitia_649w.webp'
 import panitia2Image from './panitia_2.webp'
 import beforePlay from './before_play.webp'
+import beforePlay195w from './before_play_195w.webp'
+import beforePlay525w from './before_play_525w.webp'
+import beforePlay300w from './before_play_300w.webp'
+import beforePlay600w from './before_play_600w.webp'
+import beforePlay723w from './before_play_723w.webp'
+import beforePlay1080w from './before_play_1080w.webp'
+import beforePlay1480w from './before_play_1480w.webp'
+import beforePlay1790w from './before_play_1790w.webp'
+import beforePlay2048w from './before_play_2048w.webp'
 import arrowOutward from './icons/arrow_outward.svg'
 import instagramIcon from './icons/instagram.svg'
 import tiktokIcons from './icons/tiktok.svg'
@@ -40,9 +54,23 @@ import subtitleVideo from './subtitle.vtt'
 
 export const assets = {
     backgroundTournament,
+    backgroundTournament525w,
+    backgroundTournament300w,
     logoNew,
     panitia2Image,
+    panitia195w,
+    panitia525w,
+    panitia649w,
     beforePlay,
+    beforePlay195w,
+    beforePlay525w,
+    beforePlay300w,
+    beforePlay600w,
+    beforePlay723w,
+    beforePlay1080w,
+    beforePlay1480w,
+    beforePlay1790w,
+    beforePlay2048w,
     arrowOutward,
     instagramIcon,
     tiktokIcons,
