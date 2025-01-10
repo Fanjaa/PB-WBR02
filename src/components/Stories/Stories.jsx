@@ -6,7 +6,7 @@ const Stories = () => {
     <div id='stories' className='stories'>
         <div className="stories-grid">
           <div className="stories-grid-items" id='imageOne'>
-            <img src={assets.backgroundTournament} alt="Sportivitas Image"/>
+            <img src={assets.backgroundTournament720x480} alt="Sportivitas Image"/>
           </div>
           <div className="stories-grid-items" id='paragraphOne' >
             <div className="stories-paragraph" data-aos="fade-up" data-aos-duration="1000">

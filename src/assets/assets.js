@@ -1,7 +1,12 @@
 import backgroundTournament from './background_tournament.webp'
 import backgroundTournament525w from './background_tournament_525w.webp'
+import backgroundTournament720x480 from './background_tournament_720x480.webp'
 import backgroundTournament300w from './background_tournament_300w.webp'
-import logoNew from './logoTransparent.webp'
+import logoNew from './logoTransparent_80x80.webp'
+import panitia120x130 from './panitia_120x130.jpg'
+import panitia240x260 from './panitia_240x260.webp'
+import panitia360x390 from './panitia_360x390.webp'
+import panitia454x300 from './panitia_454x300.webp'
 import panitia195w from './panitia_195w.webp'
 import panitia300w from './panitia_300w.webp'
 import panitia525w from './panitia_525w.webp'
@@ -60,8 +65,13 @@ export const assets = {
     backgroundTournament,
     backgroundTournament525w,
     backgroundTournament300w,
+    backgroundTournament720x480,
     logoNew,
     panitia2Image,
+    panitia120x130,
+    panitia240x260,
+    panitia360x390,
+    panitia454x300,
     panitia195w,
     panitia300w,
     panitia525w,
