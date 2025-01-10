@@ -14,7 +14,7 @@ const Intro = () => {
           </div>
         </div>      
         <div className="intro-videos" data-aos="zoom-out" data-aos-duration="1000">
-          <video poster={assets.thumbnail} controls>
+          <video poster={assets.thumbnail} controls loading='lazy' >
             <source src={assets.videoCup1} type='video/mp4'/>
             <track src={assets.subtitleVideo} kind="captions" srcLang="id" label="Indonesian"></track>
           </video>
