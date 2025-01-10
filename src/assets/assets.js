@@ -9,6 +9,9 @@ import panitia649w from './panitia_649w.webp'
 import panitia2Image from './panitia_2.webp'
 import beforePlay from './before_play.webp'
 import beforePlay195w from './before_play_195w.webp'
+import beforePlay300x350 from './before_play_300x350.webp'
+import beforePlay350x504 from './before_play_350x504.webp'
+import beforePlay720x480 from './before_play_720x480.webp'
 import beforePlay525w from './before_play_525w.webp'
 import beforePlay300w from './before_play_300w.webp'
 import beforePlay600w from './before_play_600w.webp'
@@ -65,6 +68,9 @@ export const assets = {
     panitia649w,
     beforePlay,
     beforePlay195w,
+    beforePlay300x350,
+    beforePlay350x504,
+    beforePlay720x480,
     beforePlay525w,
     beforePlay300w,
     beforePlay600w,

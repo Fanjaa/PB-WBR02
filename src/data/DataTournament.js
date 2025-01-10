@@ -65,7 +65,7 @@ const DataTournament = [
     {
         id: 10,
         title: 'Kerjasama Tim',
-        image: 'beforePlay525w',
+        image: 'beforePlay300x350',
         content: 'Semangat Kerjasama dalam Mencapai Keberhasilan',
         url: './article/semangat-kerjasama-dalam-mencapai-keberhasilan'
     },

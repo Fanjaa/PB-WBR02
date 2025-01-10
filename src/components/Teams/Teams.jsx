@@ -6,7 +6,7 @@ const Teams = () => {
     <div className='teams' id='teams'>
       <div className="teams-content">
         <div className="content-card" data-aos="fade-right" data-aos-duration="1000">
-          <img src={assets.beforePlay600w} alt="Moment Image" />
+          <img src={assets.beforePlay350x504} alt="Moment Image" />
           <div className="content-card-paragraph">
             <p>PB WBR 02 adalah ajang kompetisi badminton tahunan yang diadakan oleh PB WBR. Dikenal karena atmosfernya yang kompetitif dan penuh semangat, turnamen ini mempertemukan pemain dari berbagai level, dengan tujuan untuk mengembangkan bakat dan mempererat persahabatan antar pemain.</p>
             <p><a href='./article/ajang-kompetisi-bulu-tangkis-tahunan-yang-penuh-semangat'>Lebih Lanjut</a><img src={assets.arrowOutward} alt="Button Arrow Outward" /></p>

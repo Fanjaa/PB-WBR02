@@ -24,7 +24,7 @@ const Stories = () => {
           </div>
           <div className="stories-grid-items" id='imageTwo'>
             <img 
-            src={assets.beforePlay} alt="Before Play Image" />
+            src={assets.beforePlay720x480} alt="Before Play Image" />
           </div>
         </div>
     </div>
